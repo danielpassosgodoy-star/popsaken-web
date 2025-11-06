@@ -1,0 +1,15 @@
+<?php
+
+    $pegar_ip = $_SERVER["REMOTE_ADDR"];
+    $ip_permitido = "ip_permitido";
+
+    if ($pegar_ip == $ip_permitido) 
+    {
+       echo 'Ip Permitido!';
+    } 
+    else 
+    { 
+        header("Location: url");
+    }
+
+?>
